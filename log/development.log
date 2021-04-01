@@ -568,3 +568,205 @@ Processing by BooksController#index as HTML
 Completed 200 OK in 63ms (Views: 62.2ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/books/1/edit" for 106.129.72.199 at 2021-04-01 04:15:28 +0000
+Cannot render console from 106.129.72.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:26
+  Rendering books/edit.html.erb within layouts/application
+  Rendered books/_form.html.erb (14.2ms)
+  Rendered books/edit.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 357ms (Views: 341.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/books/1/edit?utf8=%E2%9C%93&_method=patch&authenticity_token=7ffeygbLFVlDauLznDPUeVJI0r3qAcrpZLzYrZ-Ti6zttTXjnfZGUu6ozabyl2SNJdPOQJh1MsN05FURlGOG_Q&book%5Btitle%5D=%E3%83%86%E3%82%B9%E3%83%88&book%5Bbody%5D=%E3%83%86%E3%82%B9%E3%83%88%21&commit=Update+Book" for 106.129.72.199 at 2021-04-01 04:15:32 +0000
+Cannot render console from 106.129.72.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7ffeygbLFVlDauLznDPUeVJI0r3qAcrpZLzYrZ-Ti6zttTXjnfZGUu6ozabyl2SNJdPOQJh1MsN05FURlGOG_Q", "book"=>{"title"=>"テスト", "body"=>"テスト!"}, "commit"=>"Update Book", "id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:26
+  Rendering books/edit.html.erb within layouts/application
+  Rendered books/_form.html.erb (3.2ms)
+  Rendered books/edit.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 40ms (Views: 37.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/books/1/edit?utf8=%E2%9C%93&_method=patch&authenticity_token=7ffeygbLFVlDauLznDPUeVJI0r3qAcrpZLzYrZ-Ti6zttTXjnfZGUu6ozabyl2SNJdPOQJh1MsN05FURlGOG_Q&book%5Btitle%5D=%E3%83%86%E3%82%B9%E3%83%88&book%5Bbody%5D=%E3%83%86%E3%82%B9%E3%83%88%21&commit=Update+Book" for 106.129.72.199 at 2021-04-01 04:16:19 +0000
+Cannot render console from 106.129.72.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7ffeygbLFVlDauLznDPUeVJI0r3qAcrpZLzYrZ-Ti6zttTXjnfZGUu6ozabyl2SNJdPOQJh1MsN05FURlGOG_Q", "book"=>{"title"=>"テスト", "body"=>"テスト!"}, "commit"=>"Update Book", "id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:26
+  Rendering books/edit.html.erb within layouts/application
+  Rendered books/_form.html.erb (2.0ms)
+  Rendered books/edit.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 50ms (Views: 36.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/books/1/edit?utf8=%E2%9C%93&_method=patch&authenticity_token=steoxoLPpRd2wq7JFMdKS9RcgGgU2uFvBENT5nK3kSqylUPvGfL2HNsAgZx6Y_q_o8eclWauGUUUG95aeUecew&book%5Btitle%5D=%E3%83%86%E3%82%B9%E3%83%88&book%5Bbody%5D=%E3%83%86%E3%82%B9%E3%83%88%21&commit=Update+Book" for 106.129.72.199 at 2021-04-01 04:16:30 +0000
+Cannot render console from 106.129.72.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"steoxoLPpRd2wq7JFMdKS9RcgGgU2uFvBENT5nK3kSqylUPvGfL2HNsAgZx6Y_q_o8eclWauGUUUG95aeUecew", "book"=>{"title"=>"テスト", "body"=>"テスト!"}, "commit"=>"Update Book", "id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:26
+  Rendering books/edit.html.erb within layouts/application
+  Rendered books/_form.html.erb (1.8ms)
+  Rendered books/edit.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 38ms (Views: 35.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/books/1/edit?utf8=%E2%9C%93&_method=patch&authenticity_token=steoxoLPpRd2wq7JFMdKS9RcgGgU2uFvBENT5nK3kSqylUPvGfL2HNsAgZx6Y_q_o8eclWauGUUUG95aeUecew&book%5Btitle%5D=%E3%83%86%E3%82%B9%E3%83%88&book%5Bbody%5D=%E3%83%86%E3%82%B9%E3%83%88%21&commit=Update+Book" for 106.129.72.199 at 2021-04-01 04:17:08 +0000
+Cannot render console from 106.129.72.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"steoxoLPpRd2wq7JFMdKS9RcgGgU2uFvBENT5nK3kSqylUPvGfL2HNsAgZx6Y_q_o8eclWauGUUUG95aeUecew", "book"=>{"title"=>"テスト", "body"=>"テスト!"}, "commit"=>"Update Book", "id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:26
+  Rendering books/edit.html.erb within layouts/application
+  Rendered books/_form.html.erb (1.8ms)
+  Rendered books/edit.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 39ms (Views: 35.7ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/books/1" for 106.129.72.199 at 2021-04-01 04:17:11 +0000
+Cannot render console from 106.129.72.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TFjAa1cryJriPU6voMhEB952QJhD1Qac1NfmGNTplzVMGitCzBabkU__YfrObPTzqe1cZTGh_rbEj2uk3xmaZA", "book"=>{"title"=>"テスト", "body"=>"テスト!"}, "commit"=>"Update Book", "id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:30
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:31
+  [1m[36mBook Update (2.4ms)[0m  [1m[33mUPDATE "books" SET "body" = ?, "updated_at" = ? WHERE "books"."id" = ?[0m  [["body", "テスト!"], ["updated_at", "2021-04-01 04:17:11.634310"], ["id", 1]]
+  ↳ app/controllers/books_controller.rb:31
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/books_controller.rb:31
+Redirected to https://4a0e25936aa242bb8a4459ecdb366f36.vfs.cloud9.us-east-1.amazonaws.com/books/1
+Completed 302 Found in 15ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/books/1" for 106.129.72.199 at 2021-04-01 04:17:11 +0000
+Cannot render console from 106.129.72.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:22
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 44ms (Views: 40.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/books" for 106.129.72.199 at 2021-04-01 04:17:15 +0000
+Cannot render console from 106.129.72.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:13
+  Rendered books/_form.html.erb (1.7ms)
+  Rendered books/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 38ms (Views: 37.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/books" for 106.129.72.199 at 2021-04-01 04:17:30 +0000
+Cannot render console from 106.129.72.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0zRvIvO70Ycrptc_R-xlU_AFFvjigSNhrpwtfmRhXRrmYqsto1IyYfryCoetpSzFXPNNb1Jq_Ly25aYpifgG1g", "book"=>{"title"=>"test2", "body"=>"test2"}, "commit"=>"Create Book"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:12
+  [1m[36mBook Create (1.9ms)[0m  [1m[32mINSERT INTO "books" ("body", "created_at", "updated_at", "title") VALUES (?, ?, ?, ?)[0m  [["body", "test2"], ["created_at", "2021-04-01 04:17:30.749829"], ["updated_at", "2021-04-01 04:17:30.749829"], ["title", "test2"]]
+  ↳ app/controllers/books_controller.rb:12
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/books_controller.rb:12
+Redirected to https://4a0e25936aa242bb8a4459ecdb366f36.vfs.cloud9.us-east-1.amazonaws.com/books/2
+Completed 302 Found in 12ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/books/2" for 106.129.72.199 at 2021-04-01 04:17:30 +0000
+Cannot render console from 106.129.72.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:22
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 33ms (Views: 31.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/books/2/edit" for 106.129.72.199 at 2021-04-01 04:17:33 +0000
+Cannot render console from 106.129.72.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:26
+  Rendering books/edit.html.erb within layouts/application
+  Rendered books/_form.html.erb (3.0ms)
+  Rendered books/edit.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 44ms (Views: 41.4ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/books/2" for 106.129.72.199 at 2021-04-01 04:17:36 +0000
+Cannot render console from 106.129.72.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WK-PBvbOSZtJVpfuOHssRhF4-h3J2edHUuX3lrYzkGoRME1XbY-JL14nPYt26KNpya-P7iQnhx0plz2uo7HBCA", "book"=>{"title"=>"test2", "body"=>"test2!!"}, "commit"=>"Update Book", "id"=>"2"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:30
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:31
+  [1m[36mBook Update (1.8ms)[0m  [1m[33mUPDATE "books" SET "body" = ?, "updated_at" = ? WHERE "books"."id" = ?[0m  [["body", "test2!!"], ["updated_at", "2021-04-01 04:17:36.796938"], ["id", 2]]
+  ↳ app/controllers/books_controller.rb:31
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/books_controller.rb:31
+Redirected to https://4a0e25936aa242bb8a4459ecdb366f36.vfs.cloud9.us-east-1.amazonaws.com/books/2
+Completed 302 Found in 12ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/books/2" for 106.129.72.199 at 2021-04-01 04:17:37 +0000
+Cannot render console from 106.129.72.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:22
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/books" for 106.129.72.199 at 2021-04-01 04:17:38 +0000
+Cannot render console from 106.129.72.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:13
+  Rendered books/_form.html.erb (1.6ms)
+  Rendered books/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 57ms (Views: 55.7ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/books/2" for 106.129.72.199 at 2021-04-01 04:17:43 +0000
+Cannot render console from 106.129.72.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5mUc3CHf1OWKaoGhygtGsTp9mUQHyzBhQxqok85tbTTmJ_f1uuKH7ieorvSkr_ZFTeaFuXW_yEtTQiUvxZ1gZQ", "id"=>"2"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:41
+  [1m[36mBook Destroy (1.3ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/books_controller.rb:41
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/books_controller.rb:41
+Redirected to https://4a0e25936aa242bb8a4459ecdb366f36.vfs.cloud9.us-east-1.amazonaws.com/books
+Completed 302 Found in 12ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/books" for 106.129.72.199 at 2021-04-01 04:17:43 +0000
+Cannot render console from 106.129.72.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:13
+  Rendered books/_form.html.erb (1.6ms)
+  Rendered books/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.1ms)
+
+
